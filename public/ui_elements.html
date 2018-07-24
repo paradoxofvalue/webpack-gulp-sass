@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link href="./styles/index.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    <i class="material-icons">cloud</i>Logo
+                </a>
+
+                <ul class="hide-on-med-and-down">
+                    <li class="active">
+                        <a class="categories-trigger" href="#!" data-target="categories">Категории
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Новости</a>
+                    </li>
+                </ul>
+
+                <ul class="hide-on-med-and-down pull-right">
+                    <li class="active">
+                        <a class="lang-trigger" href="#!" data-target="lang">Ру
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                    <li class="mail">
+                        <a href="#" class="">
+                            <img src="../styles/nav/mail.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="chat">
+                        <a href="#" class="">
+                            <img src="../styles/nav/chat.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="user">
+                        <a href="#" class="">
+                            <img src="../styles/nav/user.svg" alt=""> Войти
+                        </a>
+                    </li>
+                    <li class="search">
+                        <a href="#" >
+                            <img src="../styles/nav/search.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Dropdown Structure -->
+        <ul id="categories" class="dropdown-content">
+            <li>
+                <a href="#!">Города</a>
+            </li>
+            <li>
+                <a href="#!">Страны</a>
+            </li>
+            <li>
+                <a href="#!">Отели</a>
+            </li>
+            <li>
+                <a href="#!">Туры</a>
+            </li>
+            <li>
+                <a href="#!">Визы</a>
+            </li>
+        </ul>
+        <!-- Dropdown Structure -->
+        <ul id="lang" class="dropdown-content">
+            <li>
+                <a href="#!">Ру</a>
+            </li>
+            <li>
+                <a href="#!">En</a>
+            </li>
+        </ul>
+    </header>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./materialize-src/js/bin/materialize.min.js"></script>
+    <script src="./js/page.js" defer></script>
+</body>
+
+</html>

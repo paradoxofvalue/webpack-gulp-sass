@@ -1,18 +1,13 @@
 'use strict';
 
-import Form from './form';
-import Menu from './menu';
+// import Form from './form';
+// import Menu from './menu';
 
-let menu = new Menu({
-    elem: document.querySelector('header nav')
-  }),
-  form = new Form({
-    elem: document.querySelector('#reg')
-  });
+// let menu = new Menu({
+//   elem: document.querySelector('header nav')
+// });
 
 
-// document.querySelector('.page__header').onclick = function() {
-  require.ensure([], function() {
-    require('./header');
-  });
-// };
+require.ensure([], function () {
+  require('./header');
+});
