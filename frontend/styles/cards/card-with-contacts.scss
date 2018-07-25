@@ -1,24 +1,18 @@
 .card-with-contacts {
     display: flex;
-    a {
-        display: flex;
-        position: relative;
-        overflow: hidden;
-        justify-content: center;
-        flex-direction: row;
-        border-radius: $border-radius;
-        margin-bottom: $default-margin;
-    }
-    
+    border-radius: $border-radius;
+    overflow: hidden;
+    height: 180px;
+    margin-bottom: $default-margin;
     img {
         max-width: 270px;
-        width: 100%;
+        width: auto;
         max-height: 180px;
-        height: auto;
+        height: 180px;
     }
     .text {
         background-color: white;
-        padding: 30px;
+        padding: $default-margin / 2;
         .rubric {
             display: block;
             color: $light-green;
@@ -27,7 +21,7 @@
             font-weight: 500;
         }
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: $main-color;
             margin: 0;
             margin-bottom: $default-margin / 2;
@@ -39,7 +33,9 @@
             position: relative;
             font-weight: 400;
             overflow: hidden;
-            height: 3rem;
+            line-height: 1;
+            height:  0.8rem * 3;
+            font-size: 0.8rem;
             &:after {
                 content: '...';
                 background: white;
@@ -48,6 +44,21 @@
                 line-height: 1;
                 right: 0;
                 box-shadow: -5px 0 15px 5px white;
+            }
+        }
+        .actions {
+            margin-top: $default-margin /2;
+            a {
+                position: relative;
+                z-index: 9;
+                color: $light-green;
+                i {
+                    position: relative;
+                    top: 5px;
+                }
+                &:last-child() {
+                    margin-left: $default-margin;
+                }
             }
         }
     }
