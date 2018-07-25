@@ -1,7 +1,120 @@
+$max-width: 1170px;
+$main-color: #1a1a1a;
+$secondary-color: #6c7f90;
+$default-margin: 30px;
+$border-radius: 4px;
+$light-green: #16c972;
+$gray-color: #e9ebee;
+$gray2-color: #afbfc9;
+$gray3-color: #484848;
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
 }
+
 * {
     box-sizing: border-box;
+}
+
+a:hover {
+    h3 {
+        text-decoration: underline;
+    }
+}
+
+section.wrapper {
+    display: flex;
+    &>div {
+        max-width: $max-width;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: $default-margin;
+    }
+}
+
+.gray-background {
+    background-color: $gray-color;
+}
+
+footer {
+    position: relative;
+    div.scrollToTop {
+        position: absolute;
+        width: 40px;
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                span {
+                    color: $light-green;
+                }
+            }
+        }
+        top: -80px;
+        left: 0;
+        right: 0;
+        span {
+            color: transparent;
+            margin-bottom: 10px;
+            transition: 0.2s;
+        }
+        i {
+            height: $default-margin;
+            width: $default-margin;
+            border-radius: 50%;
+            color: white;
+            background-color: $light-green;
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+    padding: $default-margin*2 0 $default-margin 0;
+    display: flex;
+    background-color: $main-color;
+    &>div {
+        max-width: $max-width;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: $default-margin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+            display: flex;
+            margin-top: $default-margin;
+            margin-bottom: $default-margin;
+            li {
+                a {
+                    color: white;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                margin-right: $default-margin;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .copyright {
+            width: 100%;
+            text-align: center;
+            padding-top: $default-margin;
+            color: $gray3-color;
+            border-top: 1px solid $gray3-color;
+            a {
+                color: $gray3-color;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0 0 $default-margin 0;
 }

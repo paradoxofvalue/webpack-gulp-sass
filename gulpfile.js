@@ -92,7 +92,7 @@ gulp.task('assets', function() {
 });
 
 gulp.task('styles:assets', function() {
-  return gulp.src('frontend/styles/**/*.{svg,png}', {since: gulp.lastRun('styles:assets')})
+  return gulp.src('frontend/styles/**/*.{svg,png,jpg}', {since: gulp.lastRun('styles:assets')})
       .pipe(gulp.dest('public/styles'));
 });
 

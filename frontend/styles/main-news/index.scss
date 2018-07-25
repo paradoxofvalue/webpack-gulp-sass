@@ -1,0 +1,131 @@
+.main-news {
+    display: flex;
+    justify-content: space-between;
+    .news-slider {
+        width: $max-width / 2 - 15px;
+        height: $max-width / 2 - 15px;
+        overflow: hidden;
+        .owl-item {
+            float: left;
+        }
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            left: $default-margin;
+            background-color: rgba($color: $main-color, $alpha: .8);
+            border-radius: $border-radius;
+            padding: $default-margin / 3;
+            .owl-prev,
+            .owl-next {
+                background: none;
+                border: none;
+                outline: none;
+                color: white;
+                cursor: pointer;
+                font-size: 2rem;
+                line-height: 0;
+                position: relative;
+                top: 5px;
+                span {
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .news-slider-item {
+            display: flex;
+            position: relative;
+            border-radius: $border-radius;
+            justify-content: center;
+            overflow: hidden;
+            img {
+                position: relative;
+                width: auto;
+                height: 570px;
+                left: 0;
+                right: 0;
+            }
+            .text {
+                background-color: rgba($color: $main-color, $alpha: .8);
+                border-radius: $border-radius;
+                position: absolute;
+                bottom: $default-margin;
+                left: $default-margin;
+                width: 350px;
+                padding: $default-margin * 1.2 $default-margin * 0.7;
+                .rubric {
+                    display: block;
+                    color: $light-green;
+                    margin: 0;
+                    margin-bottom: $default-margin / 2;
+                    font-weight: 500;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    color: white;
+                    margin: 0;
+                    margin-bottom: $default-margin / 2;
+                    font-weight: bold;
+                }
+                p {
+                    color: rgba($color: white, $alpha: .8);
+                    margin: 0;
+                    position: relative;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .other-news {
+        width: $max-width / 2 - 15px;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        section {
+            width: ($max-width / 2 - 15px) / 2 - 15px;
+            margin-bottom: $default-margin;
+            a {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                img {
+                    width: 100%;
+                    border-radius: $border-radius;
+                    margin-bottom: $default-margin / 2;
+                }
+                .rubric {
+                    color: $light-green;
+                    margin: 0;
+                    margin-bottom: $default-margin / 2;
+                    font-weight: 500;
+                }
+                h3 {
+                    font-size: 1rem;
+                    margin: 0;
+                    margin-bottom: $default-margin / 2;
+                    color: $main-color;
+                    font-weight: bold;
+                }
+                p {
+                    margin: 0;
+                    color: $secondary-color;
+                    height: 2.5rem;
+                    overflow: hidden;
+                    position: relative;
+                    font-weight: 400;
+                    &:after {
+                        content: '...';
+                        background: white;
+                        color: $secondary-color;
+                        position: absolute;
+                        bottom: 0;
+                        line-height: 1;
+                        right: 0;
+                        box-shadow: -5px 0 15px 5px white;
+                    }
+                }
+            }
+        }
+    }
+}

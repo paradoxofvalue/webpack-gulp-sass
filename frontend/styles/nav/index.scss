@@ -1,8 +1,14 @@
 header.navbar-fixed {
     nav {
-        background-color: #1a1a1a;
+        .brand-logo {
+            img {
+                position: relative;
+                top: 4px;
+            }
+        }
+        background-color: $main-color;
         div.nav-wrapper {
-            max-width: 1150px;
+            max-width: $max-width;
             width: 100%;
             margin: 0 auto;
             ul {
@@ -21,22 +27,22 @@ header.navbar-fixed {
                         a {
                             img {
                                position: relative;
-                               top: 5px;
+                               top: 4px;
                             }
                         }
                         &.chat {
                             a img {
-                                top: 7px;
+                                top: 6px;
                             }
                         }
                         &.user {
                             a img {
-                                top: 7px;
+                                top: 6px;
                                 margin-right: 5px;
                             }
                         }
                         &.search {
-                            margin-left: 30px;
+                            margin-left: $default-margin;
                             position: relative;
                             &:before {
                                 content: '';
