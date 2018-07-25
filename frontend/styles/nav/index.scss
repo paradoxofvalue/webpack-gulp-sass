@@ -6,7 +6,7 @@ header.navbar-fixed {
                 top: 4px;
             }
         }
-        background-color: $main-color;
+        background-color: rgba($color: $main-color, $alpha: .99);
         div.nav-wrapper {
             max-width: $max-width;
             width: 100%;
@@ -66,6 +66,9 @@ header.navbar-fixed {
                     &.dropdown-content li {
                         background-color: black;
                         min-height: auto;
+                        &:hover {
+                            background-color: $light-green;
+                        }
                         a,
                         span {
                             color: white;

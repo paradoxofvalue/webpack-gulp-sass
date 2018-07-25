@@ -7,6 +7,7 @@ $light-green: #16c972;
 $gray-color: #e9ebee;
 $gray2-color: #afbfc9;
 $gray3-color: #484848;
+$gray4-color: #556b7f;
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
@@ -34,6 +35,10 @@ section.wrapper {
 
 .gray-background {
     background-color: $gray-color;
+}
+
+.padding-top-footer {
+    padding-bottom: $default-margin*2;
 }
 
 footer {
@@ -117,4 +122,35 @@ footer {
 h2 {
     font-size: 1.5rem;
     margin: 0 0 $default-margin 0;
+}
+
+.tabs {
+    margin-bottom: $default-margin;
+    background-color: transparent;
+    .tab {
+        &:last-child() {
+            a {
+                margin-right: 0;
+            }
+        }
+        a {
+            text-transform: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0;
+            margin-right: 15px;
+            color: rgba($color: $main-color, $alpha: .5);
+            &:hover,
+            &.active {
+                color: $main-color;
+            }
+            &:focus,
+            &:focus.active {
+                background-color: transparent;
+            }
+        }
+    }
+    .indicator {
+        background-color: rgba($color: $light-green, $alpha: .8);
+    }
 }
