@@ -1,0 +1,117 @@
+$green: #05c568;
+.modal {
+    > div.row {
+        margin-bottom: 0;
+    }
+    width: 430px;
+    padding: 20px 30px;
+    form {
+        a {
+            position: relative;
+            left: 260px;
+            color: $green;
+        }
+        button {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            color: $green;
+            margin-top: 10px;
+            border: 1px solid $green;
+            border-radius: 20px;
+            line-height: 1;
+            font-size: 1rem;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+    input:not([type]):focus:not([readonly]),
+    input[type=text]:not(.browser-default):focus:not([readonly]),
+    input[type=password]:not(.browser-default):focus:not([readonly]),
+    input[type=email]:not(.browser-default):focus:not([readonly]),
+    input[type=url]:not(.browser-default):focus:not([readonly]),
+    input[type=time]:not(.browser-default):focus:not([readonly]),
+    input[type=date]:not(.browser-default):focus:not([readonly]),
+    input[type=datetime]:not(.browser-default):focus:not([readonly]),
+    input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+    input[type=tel]:not(.browser-default):focus:not([readonly]),
+    input[type=number]:not(.browser-default):focus:not([readonly]),
+    input[type=search]:not(.browser-default):focus:not([readonly]),
+    textarea.materialize-textarea:focus:not([readonly]) {
+        border-color: $green;
+        box-shadow: 0 1px 0 0 $green;
+    }
+    input:not([type]):focus:not([readonly])+label,
+    input[type=text]:not(.browser-default):focus:not([readonly])+label,
+    input[type=password]:not(.browser-default):focus:not([readonly])+label,
+    input[type=email]:not(.browser-default):focus:not([readonly])+label,
+    input[type=url]:not(.browser-default):focus:not([readonly])+label,
+    input[type=time]:not(.browser-default):focus:not([readonly])+label,
+    input[type=date]:not(.browser-default):focus:not([readonly])+label,
+    input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+    input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+    input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+    input[type=number]:not(.browser-default):focus:not([readonly])+label,
+    input[type=search]:not(.browser-default):focus:not([readonly])+label,
+    textarea.materialize-textarea:focus:not([readonly])+label {
+        color: $green;
+    }
+    #login [type="checkbox"]+span:not(.lever):before,
+    #login [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+        top: -4px;
+        left: -5px;
+        width: 12px;
+        height: 22px;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid $green;
+        border-bottom: 1px solid $green;
+        transform: rotate(40deg);
+        backface-visibility: hidden;
+        transform-origin: 100% 100%;
+    }
+    [type="checkbox"]:checked+span:not(.lever):before {
+        top: -4px;
+        left: -5px;
+        width: 12px;
+        height: 22px;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid $green;
+        border-bottom: 1px solid $green;
+        transform: rotate(40deg);
+        backface-visibility: hidden;
+        transform-origin: 100% 100%;
+    }
+    [type="checkbox"]+span:not(.lever):before,
+    [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        z-index: 0;
+        border: 1px solid #9e9e9e;
+        border-radius: 1px;
+        margin-top: 3px;
+        transition: .2s;
+    }
+    .input-field.col label {
+        left: 0;
+    }
+    .input-field>label:not(.label-icon).active {
+        transform: translateY(-8px) scale(0.8);
+    }
+    .row .col {
+        padding: 0;
+    }
+    .row .col.input-field {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
