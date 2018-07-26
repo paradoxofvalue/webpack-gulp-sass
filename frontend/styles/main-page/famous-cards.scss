@@ -1,0 +1,45 @@
+.famous-cards {
+    display: flex;
+    justify-content: space-between;
+    .famous-card {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+        width: calc(100% / 3 - 20px);
+        margin: 0;
+        height: 270px;
+        margin-bottom: $default-margin;
+        overflow: hidden;
+        border-radius: $border-radius;
+        img {
+            width: auto;
+            height: 270px;
+        }
+        figcaption {
+            padding: 15px 20px;
+            position: absolute;
+            background-color: rgba($color: $light-green, $alpha: .8);
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            h3 {
+                font-size: 1.5rem;
+                margin: 0;
+                line-height: 1;
+            }
+            span {
+                line-height: 1;
+                font-size: 1.3rem;
+                .currency {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

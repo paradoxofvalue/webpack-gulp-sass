@@ -1,0 +1,101 @@
+.main-slider .owl-nav {
+    margin-bottom: -65px;
+    position: relative;
+    top: -200px;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    margin: 0 auto;
+    .owl-prev,
+    .owl-next {
+        background: none;
+        border: none;
+        outline: none;
+        z-index: 9;
+        cursor: pointer;
+        font-size: 0;
+        position: relative;
+        &:before {
+            content: '';
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            background-color: transparent;
+            border-radius: 50%;
+            position: relative;
+            display: inline-flex;
+            transition: 0.2s;
+        }
+        &:hover:before {
+            background-color: $light-green;
+        }
+        &:after {
+            content: '';
+            background-image: url('./images/toLeft.svg');
+            position: absolute;
+            display: inline-flex;
+            width: 30px;
+            height: 19px;
+            left: 15px;
+            top: 7px;
+        }
+    }
+    .owl-next {
+        &:after {
+            background-image: url('./images/toRight.svg');
+            left: -5px;
+        }
+    }
+}
+
+.owl-stage-outer {
+    overflow: hidden;
+}
+
+.slider-form-wrapper {
+    position: relative;
+    margin-bottom: -$default-margin;
+}
+
+.owl-item {
+    float: left;
+}
+
+.main-slider-item {
+    height: 540px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    h3 {
+        color: white;
+        font-size: 1rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: $default-margin;
+    }
+    a {
+        padding: 10px 25px;
+        line-height: 1;
+        border: 1px solid white;
+        cursor: pointer;
+        color: white;
+        border-radius: 25px;
+        margin-bottom: 40px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    span {
+        font-size: 4rem;
+        color: rgba($color: white, $alpha: .7);
+        font-weight: bold;
+    }
+}

@@ -100,9 +100,11 @@ gulp.task('webpack', function(callback) {
 
   let options = {
     entry:   {
-      page: './frontend/js/page',
-      page2: './frontend/js/page2',
-      pageIndex: './frontend/js/page-index'
+      header: './frontend/js/header',
+      mainPage: './frontend/js/mainPage',
+      newsPage: './frontend/js/newsPage',
+      categoriesPage: './frontend/js/categoriesPage',
+      // pageIndex: './frontend/js/page-index'
     },
     output:  {
       path:     __dirname + '/public/js',

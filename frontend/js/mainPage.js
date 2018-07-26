@@ -1,4 +1,3 @@
-'use strict';
 $(".main-owl-carousel").owlCarousel({
     items: 1,
     autoWidth: false,
@@ -21,6 +20,6 @@ $('select').formSelect();
 $(".slider").owlCarousel({
     items: 1,
     autoWidth: false,
-    dots:false,
+    dots: false,
     nav: true,
 });

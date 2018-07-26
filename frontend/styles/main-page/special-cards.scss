@@ -1,0 +1,93 @@
+.special-cards {
+    display: flex;
+    justify-content: space-between;
+    .special-card {
+        margin: 0;
+        margin-bottom: $default-margin;
+        width: calc(100% / 3 - 20px);
+        position: relative;
+        border-radius: $border-radius;
+        overflow: hidden;
+        a {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            &:hover {
+                &~figcaption h3 {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .img-wrap {
+            height: 200px;
+            width: 100%;
+            overflow: hidden;
+            min-width: calc(100% / 3 - 20px);
+            position: relative;
+            img {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        figcaption>a {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            position: relative;
+            padding: 20px;
+            .favourite {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                display: flex;
+                font-size: 1.4rem;
+                line-height: 1;
+                color: $light-green;
+                font-weight: 400;
+            }
+            h3 {
+                font-size: 1.2rem;
+                margin: 0;
+                margin-bottom: 20px;
+                font-weight: bold;
+                text-align: left;
+                color: $main-color;
+                line-height: 1;
+            }
+            span.location {
+                color: $light-green;
+                line-height: 1;
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 0;
+                margin-bottom: 40px;
+                line-height: 0.9rem;
+                color: rgba($color: $main-color, $alpha: .8);
+            }
+            span.price {
+                color: $main-color;
+                font-size: 1.6rem;
+                span.currency {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        a.btn {
+            width: 150px;
+            line-height: 35px;
+            color: $light-green;
+            border: 1px solid $light-green;
+            border-radius: 35px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
