@@ -1,0 +1,18 @@
+.special-cards {
+    flex-wrap: wrap;
+
+    .special-card {
+        .img-wrap {
+            height: 170px;
+        }
+        figcaption > a {
+            span.price {
+                color: $green;
+            }
+            p {
+                margin-bottom: $def-mar;
+            }
+        }
+    }
+}
+

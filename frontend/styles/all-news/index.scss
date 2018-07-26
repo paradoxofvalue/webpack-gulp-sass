@@ -54,36 +54,3 @@
     }
 }
 
-section.wrapper {
-    .pagination {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 3 * $default-margin;
-        li {
-            box-sizing: border-box;
-            background: transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 40px;
-            width: 40px;
-            border: 2px solid transparent;
-            &.active {
-                a {
-                    color: $light-green;
-                }
-                border-color: $light-green;
-            }
-            &:first-child,
-            &:last-child {
-                border-color: $gray2-color;
-                a {
-                    color: $gray2-color;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-        }
-    }
-}

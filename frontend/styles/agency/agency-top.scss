@@ -1,0 +1,35 @@
+
+.agency-background-image {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    top: -25%;
+}
+
+.agency-top {
+    margin-top: 300px;
+    &>div {
+        margin-top: 270px;
+        position: relative;
+        z-index: 1;
+        overflow: visible;
+        .agency-logo {
+            position: absolute;
+            height: 170px;
+            width: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -90px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 1;
+            border-radius: $bor-rad;
+            background-color: white;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

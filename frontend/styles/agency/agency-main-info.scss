@@ -1,0 +1,112 @@
+.agency-main-info {
+    .info-wrapper {
+        margin-top: $def-mar+20px;
+        display: flex;
+        justify-content: space-between;
+        section {
+            width: 770px;
+            position: relative;
+            background: white;
+            border-radius: $bor-rad;
+            padding: $def-mar;
+            padding-bottom: $def-mar*2;
+            h3,
+            p {
+                margin: 0;
+                margin-bottom: $def-mar;
+            }
+            p {
+                margin: 0;
+                margin-bottom: $def-mar;
+                color: $sec-color;
+            }
+            .actions {
+                position: absolute;
+                bottom: 30px;
+                a {
+                    color: $green;
+                    margin-right: $def-mar;
+                    i {
+                        position: relative;
+                        top: 5px;
+                    }
+                    &:last-child() {
+                        i {
+                            transform: rotateZ(-20deg);
+                        }
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        aside {
+            width: calc(100% - 800px);
+            position: relative;
+            .contact-info {
+                background: white;
+                border-radius: $bor-rad;
+                margin-bottom: $def-mar;
+                ul {
+                    margin: 0;
+                }
+                li {
+                    &:last-child() {
+                        border-bottom: 0;
+                    }
+                    padding: $def-mar;
+                    padding-left: 105px;
+                    display: flex;
+                    position: relative;
+                    flex-direction: column;
+                    color: $sec-color;
+                    border-bottom: 1px solid $sec-color;
+                    h4 {
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+                    i {
+                        position: absolute;
+                        left: $def-mar;
+                        font-size: 3rem;
+                        top: 37px;
+                        bottom: 0;
+                        height: 45px;
+                    }
+                    a {
+                        color: $sec-color;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .soc-networks {
+                background: white;
+                padding: $def-mar 25px;
+                border-radius: $bor-rad;
+                p {
+                    margin: 0;
+                    line-height: 1;
+                    font-weight: bold;
+                    height: 20px;
+                    position: relative;
+                    top: -14px;
+                    a {
+                        position: relative;
+                        top: 10px;
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        h3,
+        h4 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: $def-color;
+        }
+    }
+}
