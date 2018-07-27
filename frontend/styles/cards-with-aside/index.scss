@@ -1,49 +1,52 @@
 $max-width: 1170px;
 .cards-with-aside {
-    display: flex;
-    justify-content: space-between;
-    .cards, .special-cards {
-        width: $max-width - 270px - $default-margin;
+  display: flex;
+  justify-content: space-between;
+  .cards,
+  .special-cards {
+    width: $max-width - 270px - $default-margin;
+  }
+  aside {
+    width: 270px;
+    div {
+      padding: 20px;
+      background-color: white;
+      border-radius: $border-radius;
+      height: max-content;
+      margin-bottom: $default-margin;
     }
-    aside {
-        width: 270px;
-        
-        padding: 20px;
-        background-color: white;
-        border-radius: $border-radius;
-        h3 {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 0;
-        }
-        height: max-content;
-        ul {
-            li {
-                margin-bottom: 10px;
-                a {
-                    color: $secondary-color;
-                    &:hover {
-                        color: $light-green;
-                    }
-                }
-                &.active {
-                    a {
-                        color: $light-green;
-                    }
-                    &:before {
-                        content: '';
-                        background-image: url('./../styles/cards-with-aside/baseline-arrow_forward-24px.svg');
-                        width: 20px;
-                        height: 20px;
-                        position: relative;
-                        display: inline-block;
-                        top: 5px;
-                        background-repeat: no-repeat;
-                        background-size: 100%;
-                        background-position: 50%;
-                    }
-                }
-            }
-        }
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0;
     }
+    ul {
+      li {
+        margin-bottom: 10px;
+        a {
+          color: $secondary-color;
+          &:hover {
+            color: $light-green;
+          }
+        }
+        &.active {
+          a {
+            color: $light-green;
+          }
+          &:before {
+            content: '';
+            background-image: url('./../styles/cards-with-aside/baseline-arrow_forward-24px.svg');
+            width: 20px;
+            height: 20px;
+            position: relative;
+            display: inline-block;
+            top: 5px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 50%;
+          }
+        }
+      }
+    }
+  }
 }

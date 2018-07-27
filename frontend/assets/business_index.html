@@ -15,172 +15,172 @@
 <body>
     <header class="navbar-fixed">
         <nav>
-          <div class="nav-wrapper">
-            <a href="#" class="brand-logo">
-              <img src="./styles/nav/logo.png" alt="">
-            </a>
-    
-            <ul class="hide-on-med-and-down">
-              <li class="active">
-                <a class="categories-trigger" href="#!" data-target="categories">Категории
-                  <i class="material-icons right">arrow_drop_down</i>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    <img src="./styles/nav/logo.png" alt="">
                 </a>
-              </li>
-              <li>
-                <a href="#" class="">О компании</a>
-              </li>
-              <li>
-                <a href="#" class="">Новости</a>
-              </li>
-            </ul>
-    
-            <ul class="hide-on-med-and-down pull-right">
-              <li class="active">
-                <a class="lang-trigger" href="#!" data-target="lang">Ру
-                  <i class="material-icons right">arrow_drop_down</i>
-                </a>
-              </li>
-              <li class="mail">
-                <a href="#chat" class="modal-trigger" data-target="chat">
-                  <img src="./styles/nav/mail.svg" alt="">
-                </a>
-              </li>
-              <li class="chat">
-                <a href="#">
-                  <img src="./styles/nav/chat.svg" alt="">
-                </a>
-              </li>
-              <li class="user">
-                <a href="#login" class="modal-trigger" data-target="login">
-                  <img src="./styles/nav/user.svg" alt=""> Войти
-                </a>
-              </li>
-              <li class="search">
-                <a href="#">
-                  <img src="./styles/nav/search.svg" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
+
+                <ul class="hide-on-med-and-down">
+                    <li class="active">
+                        <a class="categories-trigger" href="#!" data-target="categories">Категории
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Новости</a>
+                    </li>
+                </ul>
+
+                <ul class="hide-on-med-and-down pull-right">
+                    <li class="active">
+                        <a class="lang-trigger" href="#!" data-target="lang">Ру
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                    <li class="mail">
+                        <a href="#chat" class="modal-trigger" data-target="chat">
+                            <img src="./styles/nav/mail.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="chat">
+                        <a href="#">
+                            <img src="./styles/nav/chat.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="user">
+                        <a href="#login" class="modal-trigger" data-target="login">
+                            <img src="./styles/nav/user.svg" alt=""> Войти
+                        </a>
+                    </li>
+                    <li class="search">
+                        <a href="#">
+                            <img src="./styles/nav/search.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    
+
         <div id="login" class="modal login">
-          <div class="row">
-            <div class="col s12">
-              <ul class="tabs">
-                <li class="tab col ">
-                  <a class="active" href="#log">Вход</a>
-                </li>
-                <li class="tab col ">
-                  <a href="#reg">Регистрация</a>
-                </li>
-              </ul>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col ">
+                            <a class="active" href="#log">Вход</a>
+                        </li>
+                        <li class="tab col ">
+                            <a href="#reg">Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="log" class="col s12">
+                    <form class="col s12">
+                        <div class="input-field col s12">
+                            <input id="sign_login" type="text" class="validate">
+                            <label for="sign_login">Имя пользователя или логин</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="sign_pwd" type="password" class="validate">
+                            <label for="sign_pwd">Пароль</label>
+                        </div>
+
+                        <a href="#">Забыли пароль?</a>
+
+                        <div class="input-field col s12">
+                            <button type="submit">Войти</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div id="reg" class="col s12">
+                    <form class="col s12">
+                        <div class="input-field col s12">
+                            <input id="reg_login" type="text" class="validate">
+                            <label for="reg_login">Имя пользователя или логин</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="reg_pwd" type="password" class="validate">
+                            <label for="reg_pwd">Пароль</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="isAgree" />
+                                    <span>Я согласен с условиями</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="input-field col s12">
+                            <button type="submit">Зарегистрироваться</button>
+                        </div>
+
+                    </form>
+                </div>
             </div>
-            <div id="log" class="col s12">
-              <form class="col s12">
-                <div class="input-field col s12">
-                  <input id="sign_login" type="text" class="validate">
-                  <label for="sign_login">Имя пользователя или логин</label>
-                </div>
-                <div class="input-field col s12">
-                  <input id="sign_pwd" type="password" class="validate">
-                  <label for="sign_pwd">Пароль</label>
-                </div>
-    
-                <a href="#">Забыли пароль?</a>
-    
-                <div class="input-field col s12">
-                  <button type="submit">Войти</button>
-                </div>
-    
-              </form>
-            </div>
-            <div id="reg" class="col s12">
-              <form class="col s12">
-                <div class="input-field col s12">
-                  <input id="reg_login" type="text" class="validate">
-                  <label for="reg_login">Имя пользователя или логин</label>
-                </div>
-                <div class="input-field col s12">
-                  <input id="reg_pwd" type="password" class="validate">
-                  <label for="reg_pwd">Пароль</label>
-                </div>
-                <div class="input-field col s12">
-                  <p>
-                    <label>
-                      <input type="checkbox" id="isAgree" />
-                      <span>Я согласен с условиями</span>
-                    </label>
-                  </p>
-                </div>
-                <div class="input-field col s12">
-                  <button type="submit">Зарегистрироваться</button>
-                </div>
-    
-              </form>
-            </div>
-          </div>
         </div>
-    
+
         <div id="chat" class="modal chat">
-          <div class="row">
-            <h4>Напишите нам</h4>
-            <div class="col s12">
-              <form class="col s12">
-                <div class="input-field col s12">
-                  <input id="name_chat" type="text" class="validate">
-                  <label for="name_chat">Ваше имя*</label>
+            <div class="row">
+                <h4>Напишите нам</h4>
+                <div class="col s12">
+                    <form class="col s12">
+                        <div class="input-field col s12">
+                            <input id="name_chat" type="text" class="validate">
+                            <label for="name_chat">Ваше имя*</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="email_chat" type="email" class="validate">
+                            <label for="email_chat">Email*</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="phone_chat" type="password" class="validate">
+                            <label for="phone_chat">Телефон</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="message_chat" class="materialize-textarea"></textarea>
+                            <label for="message_chat">Текст сообщения</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <button type="submit">Отправить сообщение</button>
+                        </div>
+
+                    </form>
                 </div>
-                <div class="input-field col s12">
-                  <input id="email_chat" type="email" class="validate">
-                  <label for="email_chat">Email*</label>
-                </div>
-                <div class="input-field col s12">
-                  <input id="phone_chat" type="password" class="validate">
-                  <label for="phone_chat">Телефон</label>
-                </div>
-                <div class="input-field col s12">
-                  <textarea id="message_chat" class="materialize-textarea"></textarea>
-                  <label for="message_chat">Текст сообщения</label>
-                </div>
-    
-                <div class="input-field col s12">
-                  <button type="submit">Отправить сообщение</button>
-                </div>
-    
-              </form>
+
             </div>
-    
-          </div>
         </div>
         <!-- Dropdown Structure -->
         <ul id="categories" class="dropdown-content">
-          <li>
-            <a href="#!">Города</a>
-          </li>
-          <li>
-            <a href="#!">Страны</a>
-          </li>
-          <li>
-            <a href="#!">Отели</a>
-          </li>
-          <li>
-            <a href="#!">Туры</a>
-          </li>
-          <li>
-            <a href="#!">Визы</a>
-          </li>
+            <li>
+                <a href="#!">Города</a>
+            </li>
+            <li>
+                <a href="#!">Страны</a>
+            </li>
+            <li>
+                <a href="#!">Отели</a>
+            </li>
+            <li>
+                <a href="#!">Туры</a>
+            </li>
+            <li>
+                <a href="#!">Визы</a>
+            </li>
         </ul>
         <!-- Dropdown Structure -->
         <ul id="lang" class="dropdown-content">
-          <li>
-            <a href="#!">Ру</a>
-          </li>
-          <li>
-            <a href="#!">En</a>
-          </li>
+            <li>
+                <a href="#!">Ру</a>
+            </li>
+            <li>
+                <a href="#!">En</a>
+            </li>
         </ul>
-      </header>
+    </header>
 
     <section class="wrapper gray-background">
         <div>
@@ -249,24 +249,26 @@
                     </div>
                 </section>
                 <aside>
-                    <h3>Категории</h3>
-                    <ul>
-                        <li class="active">
-                            <a href="#">Lorem ipsum dolor sit.</a>
-                        </li>
-                        <li class="">
-                            <a href="#">Lorem ipsum dolor sit.</a>
-                        </li>
-                        <li class="">
-                            <a href="#">Lorem ipsum dolor sit.</a>
-                        </li>
-                        <li class="">
-                            <a href="#">Lorem ipsum dolor sit.</a>
-                        </li>
-                        <li class="">
-                            <a href="#">Lorem ipsum dolor sit.</a>
-                        </li>
-                    </ul>
+                    <div>
+                        <h3>Категории</h3>
+                        <ul>
+                            <li class="active">
+                                <a href="#">Lorem ipsum dolor sit.</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Lorem ipsum dolor sit.</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Lorem ipsum dolor sit.</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Lorem ipsum dolor sit.</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Lorem ipsum dolor sit.</a>
+                            </li>
+                        </ul>
+                    </div>
                 </aside>
             </section>
         </div>

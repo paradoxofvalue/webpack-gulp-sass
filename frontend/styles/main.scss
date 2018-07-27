@@ -121,8 +121,9 @@ footer {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin: 0 0 $default-margin 0;
+    font-weight: bold;
 }
 
 .tabs {
@@ -136,7 +137,7 @@ h2 {
         }
         a {
             text-transform: none;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: bold;
             padding: 0;
             margin-right: 15px;
