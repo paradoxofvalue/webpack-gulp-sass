@@ -104,6 +104,7 @@ gulp.task('webpack', function(callback) {
       mainPage: './frontend/js/mainPage',
       newsPage: './frontend/js/newsPage',
       categoriesPage: './frontend/js/categoriesPage',
+      goodPage: './frontend/js/goodPage',
       // pageIndex: './frontend/js/page-index'
     },
     output:  {

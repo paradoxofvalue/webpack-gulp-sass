@@ -1,0 +1,91 @@
+$green: #05c568;
+$m-color: #1a1a1a;
+.good {
+  .info-wrapper {
+    section {
+      width: 770px;
+      position: relative;
+      padding-bottom: 0;
+      background-color: transparent;
+      padding: 0;
+      &>div {
+        &.wrap-img {
+          padding: 0;
+          height: 493px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        border-radius: 4px;
+        padding: 30px;
+        position: relative;
+        margin-bottom: $default-margin;
+        background-color: white;
+        .tabs {
+          .tab {
+              a {
+                font-size: 1.2rem;
+              }
+          }
+        }
+      }
+    }
+    aside {
+      .good-info {
+        h3 {
+          font-size: 1.4rem;
+          margin: 0;
+          margin-bottom: 20px;
+        }
+        .price {
+          color: $green;
+          font-size: 1.4rem;
+          margin-bottom: 20px;
+          .currency {
+            font-size: 1rem;
+          }
+        }
+        .input-field {
+          .select-wrapper {
+            padding-left: 4rem;
+            width: 6rem;
+            input.select-dropdown {
+              border: 0;
+            }
+          }
+          &>label {
+            color: $m-color;
+          }
+        }
+        a.btn {
+          width: 200px;
+          line-height: 35px;
+          color: $green;
+          border: 1px solid $green;
+          border-radius: 35px;
+          text-transform: none;
+          font-size: 1rem;
+          background-color: transparent;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .seller {
+        p {
+          font-weight: bold;
+          margin: 0;
+          a {
+            font-weight: normal;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+section.about {
+  &>div {
+    max-width: 830px;
+    section {
+      padding: $def-mar;
+      background-color: white;
+      border-radius: $bor-rad;
+      margin-bottom: $def-mar;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      h3 {
+        margin-top: 0;
+        margin-bottom: $def-mar;
+        font-size: 1.6rem;
+        font-weight: bold;
+
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: $def-mar;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
