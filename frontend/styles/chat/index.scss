@@ -1,0 +1,260 @@
+section.chat {
+  height: calc(100vh - 64px);
+  .chat-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .chat-aside,
+    .chat-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 4px;
+    }
+    .chat-aside {
+      position: relative;
+      width: 370px;
+      height: 420px;
+      header {
+        .input-field {
+          margin: 0;
+          input {
+            background-color: #e9ebee;
+            border-radius: 4px;
+            color: #556b7f;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 0 20px;
+            box-sizing: border-box;
+          }
+          ::placeholder {
+            color: #556b7f;
+          }
+        }
+        .select-wrapper {
+          width: 40%;
+          display: inline-block;
+          input.select-dropdown {
+            border-bottom: none;
+            color: #556b7f;
+          }
+          .caret {
+            top: -5px;
+            fill: #556b7f;
+          }
+        }
+        button {
+          border: none;
+          outline: none;
+          background-color: transparent;
+          position: relative;
+          right: -30px;
+          text-align: right;
+          color: #556b7f;
+          cursor: pointer;
+          i {
+            font-size: 1.5rem;
+            line-height: 1;
+            position: relative;
+            top: 4px;
+          }
+        }
+      }
+      section {
+        ul {
+          max-height: 280px;
+          overflow-y: auto;
+          margin: 0 -20px;
+        }
+        li {
+         
+          a {
+            display: block;
+            display: flex;
+            padding: 10px 20px;
+            position: relative;
+            &:hover,
+            &.active {
+              background-color: rgba($color:#02c567, $alpha: 0.1);
+            }
+          }
+          .avatar {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            margin-right: 20px;
+            .avatar-wrap {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              overflow: hidden;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                height: 100%;
+              }
+            }
+            .status {
+              border: 2px solid transparent;
+              height: 15px;
+              width: 15px;
+              background-color: transparent;
+              position: absolute;
+              bottom: 0px;
+              right: 0px;
+              box-sizing: border-box;
+              border-radius: 50%;
+              &.online {
+                border-color: white;
+                background-color: green;
+              }
+              &.offline {
+                border-color: white;
+                background-color: gray;
+              }
+              &.busy {
+                border-color: white;
+                background-color: red;
+              }
+            }
+          }
+          .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h5 {
+              font-size: 1.3rem;
+              color: $main-color;
+              margin: 0;
+            }
+            p {
+              font-size: .8rem;
+              color: #556b7f;
+              margin: 0;
+              span {
+                color: $green;
+              }
+            }
+            &>span {
+              font-size: 0.8rem;
+              color: #556b7f;
+              position: absolute;
+              top: 10px;
+              right: 20px;
+            }
+          }
+        }
+      }
+    }
+    .chat-content {
+      padding: 0;
+      width: calc(100% - 400px);
+      header {
+        border-bottom: 1px solid #e9ebee;
+        padding: 30px 100px;
+        h5 {
+          font-weight: bold;
+          margin: 0;
+          font-size: 1.2rem;
+          line-height: 1;
+          span {
+            font-weight: normal;
+            color: $green;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      section {
+        
+        ul {
+          max-height: 60vh;
+          overflow-y: auto;
+          margin: 0;
+        }
+        li {
+          &.other {
+            .content h5 {
+              color: $green;
+            }
+          }
+          a {
+            display: block;
+            display: flex;
+            padding: 10px 150px 10px 100px;
+            position: relative;
+            &:hover,
+            &.active {
+              background-color: rgba($color:#02c567, $alpha: 0.1);
+            }
+          }
+          .avatar {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            margin-right: 30px;
+            .avatar-wrap {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              overflow: hidden;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                height: 100%;
+              }
+            }
+            .status {
+              border: 2px solid transparent;
+              height: 15px;
+              width: 15px;
+              background-color: transparent;
+              position: absolute;
+              bottom: 0px;
+              right: 0px;
+              box-sizing: border-box;
+              border-radius: 50%;
+              &.online {
+                border-color: white;
+                background-color: green;
+              }
+              &.offline {
+                border-color: white;
+                background-color: gray;
+              }
+              &.busy {
+                border-color: white;
+                background-color: red;
+              }
+            }
+          }
+          .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h5 {
+              font-size: 1.3rem;
+              color: $main-color;
+              margin: 0;
+            }
+            p {
+              font-size: .8rem;
+              color: #556b7f;
+              margin: 0;
+              span {
+                color: $green;
+              }
+            }
+            &>span {
+              font-size: 0.8rem;
+              color: #556b7f;
+              position: absolute;
+              top: 10px;
+              right: 100px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
