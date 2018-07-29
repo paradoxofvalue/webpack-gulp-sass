@@ -42,7 +42,7 @@ section.wrapper {
     padding-bottom: $default-margin*2;
 }
 
-footer {
+body > footer {
     position: relative;
     div.scrollToTop {
         position: absolute;

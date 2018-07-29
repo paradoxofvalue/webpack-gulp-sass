@@ -164,7 +164,8 @@ section.chat {
         }
       }
       section {
-        
+        height: 80vh;
+        overflow: hidden;
         ul {
           max-height: 60vh;
           overflow-y: auto;
@@ -249,10 +250,68 @@ section.chat {
               color: #556b7f;
               position: absolute;
               top: 10px;
-              right: 100px;
+              right: 80px;
             }
           }
         }
+      }
+
+      footer {
+        display: flex;
+        padding-left: 170px;
+        .message_chat {
+          width: 430px;
+          .input-field {
+
+          }
+          .actions {
+
+          }
+        }
+        .avatar {
+          // width: calc(100% - 430px - 20px);
+          width: 50px;
+          height: 50px;
+          margin-left: 20px;
+          position: relative;
+          margin-right: 30px;
+          .avatar-wrap {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              height: 100%;
+            }
+          }
+          .status {
+            border: 2px solid transparent;
+            height: 15px;
+            width: 15px;
+            background-color: transparent;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            &.online {
+              border-color: white;
+              background-color: green;
+            }
+            &.offline {
+              border-color: white;
+              background-color: gray;
+            }
+            &.busy {
+              border-color: white;
+              background-color: red;
+            }
+          }
+        }
+        
       }
 
     }
