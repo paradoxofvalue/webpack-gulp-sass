@@ -1,0 +1,105 @@
+.question {
+  display: flex;
+  justify-content: space-around;
+  .ask {
+    width: 470px;
+    padding: 30px;
+    background-color: white;
+    border-radius: $bor-rad;
+    h3 {
+      text-align: center;
+    }
+    button {
+      text-align: center;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      color: $green;
+      margin-top: 10px;
+      border: 1px solid $green;
+      border-radius: 20px;
+      line-height: 1;
+      font-size: 1rem;
+      background-color: transparent;
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+    div {
+      text-align: center;
+    }
+
+  }
+  .ask_contacts {
+    width: 470px;
+    padding: 30px;
+    h3 {
+      position: relative;
+      margin-bottom: 45px;
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 3px;
+        width: 60px;
+        background-color: #02c567;
+        bottom: -20px;
+      }
+    }
+    p {
+      color: #556b7f;
+      margin: 0;
+      margin-bottom: 10px;
+      i {
+        font-size: 1.2rem;
+        position: relative;
+        top: 3px;
+        padding-right: 5px;
+      }
+    }
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  input:not([type]):focus:not([readonly]),
+  input[type=text]:not(.browser-default):focus:not([readonly]),
+  input[type=password]:not(.browser-default):focus:not([readonly]),
+  input[type=email]:not(.browser-default):focus:not([readonly]),
+  input[type=url]:not(.browser-default):focus:not([readonly]),
+  input[type=time]:not(.browser-default):focus:not([readonly]),
+  input[type=date]:not(.browser-default):focus:not([readonly]),
+  input[type=datetime]:not(.browser-default):focus:not([readonly]),
+  input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+  input[type=tel]:not(.browser-default):focus:not([readonly]),
+  input[type=number]:not(.browser-default):focus:not([readonly]),
+  input[type=search]:not(.browser-default):focus:not([readonly]),
+  textarea.materialize-textarea:focus:not([readonly]) {
+    border-color: $green;
+    box-shadow: 0 1px 0 0 $green;
+  }
+  input:not([type]):focus:not([readonly])+label,
+  input[type=text]:not(.browser-default):focus:not([readonly])+label,
+  input[type=password]:not(.browser-default):focus:not([readonly])+label,
+  input[type=email]:not(.browser-default):focus:not([readonly])+label,
+  input[type=url]:not(.browser-default):focus:not([readonly])+label,
+  input[type=time]:not(.browser-default):focus:not([readonly])+label,
+  input[type=date]:not(.browser-default):focus:not([readonly])+label,
+  input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+  input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+  input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+  input[type=number]:not(.browser-default):focus:not([readonly])+label,
+  input[type=search]:not(.browser-default):focus:not([readonly])+label,
+  textarea.materialize-textarea:focus:not([readonly])+label {
+    color: $green;
+  }
+  .input-field.col label {
+    left: 0;
+  }
+  .input-field>label:not(.label-icon).active {
+    transform: translateY(-8px) scale(0.8);
+  }
+}
