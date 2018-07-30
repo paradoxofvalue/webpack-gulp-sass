@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link href="./styles/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="./OwlCarousel2/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./OwlCarousel2/assets/owl.theme.default.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <header class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+          <img src="./styles/nav/logo.png" alt="">
+        </a>
+
+        <ul class="hide-on-med-and-down">
+          <li class="active">
+            <a class="categories-trigger" href="#!" data-target="categories">Категории
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="">О компании</a>
+          </li>
+          <li>
+            <a href="#" class="">Новости</a>
+          </li>
+        </ul>
+
+        <ul class="hide-on-med-and-down pull-right">
+          <li class="active">
+            <a class="lang-trigger" href="#!" data-target="lang">Ру
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+          <li class="mail">
+            <a href="#chat" class="modal-trigger" data-target="chat">
+              <img src="./styles/nav/mail.svg" alt="">
+            </a>
+          </li>
+          <li class="chat">
+            <a href="#">
+              <img src="./styles/nav/chat.svg" alt="">
+            </a>
+          </li>
+          <li class="user">
+            <a href="#login" class="modal-trigger" data-target="login">
+              <img src="./styles/nav/user.svg" alt=""> Войти
+            </a>
+          </li>
+          <li class="search">
+            <a href="#">
+              <img src="./styles/nav/search.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="login" class="modal login">
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col ">
+              <a class="active" href="#log">Вход</a>
+            </li>
+            <li class="tab col ">
+              <a href="#reg">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+        <div id="log" class="col s12">
+          <form class="col s12">
+            <div class="input-field col s12">
+              <input id="sign_login" type="text" class="validate">
+              <label for="sign_login">Имя пользователя или логин</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="sign_pwd" type="password" class="validate">
+              <label for="sign_pwd">Пароль</label>
+            </div>
+
+            <a href="#">Забыли пароль?</a>
+
+            <div class="input-field col s12">
+              <button type="submit">Войти</button>
+            </div>
+
+          </form>
+        </div>
+        <div id="reg" class="col s12">
+          <form class="col s12">
+            <div class="input-field col s12">
+              <input id="reg_login" type="text" class="validate">
+              <label for="reg_login">Имя пользователя или логин</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="reg_pwd" type="password" class="validate">
+              <label for="reg_pwd">Пароль</label>
+            </div>
+            <div class="input-field col s12">
+              <p>
+                <label>
+                  <input type="checkbox" id="isAgree" />
+                  <span>Я согласен с условиями</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field col s12">
+              <button type="submit">Зарегистрироваться</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="chat" class="modal chat">
+      <div class="row">
+        <h4>Напишите нам</h4>
+        <div class="col s12">
+          <form class="col s12">
+            <div class="input-field col s12">
+              <input id="name_chat" type="text" class="validate">
+              <label for="name_chat">Ваше имя*</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="email_chat" type="email" class="validate">
+              <label for="email_chat">Email*</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="phone_chat" type="password" class="validate">
+              <label for="phone_chat">Телефон</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="message_chat" class="materialize-textarea"></textarea>
+              <label for="message_chat">Текст сообщения</label>
+            </div>
+
+            <div class="input-field col s12">
+              <button type="submit">Отправить сообщение</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <!-- Dropdown Structure -->
+    <ul id="categories" class="dropdown-content">
+      <li>
+        <a href="#!">Города</a>
+      </li>
+      <li>
+        <a href="#!">Страны</a>
+      </li>
+      <li>
+        <a href="#!">Отели</a>
+      </li>
+      <li>
+        <a href="#!">Туры</a>
+      </li>
+      <li>
+        <a href="#!">Визы</a>
+      </li>
+    </ul>
+    <!-- Dropdown Structure -->
+    <ul id="lang" class="dropdown-content">
+      <li>
+        <a href="#!">Ру</a>
+      </li>
+      <li>
+        <a href="#!">En</a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="wrapper gray-background profile padding-top-footer">
+      <div>
+        <form action="">
+          <h3>Настройки профиля</h3>
+          <section class="profile-settings">
+            <div class="row">
+              <div class="col s6">
+                <div class="input-field col s12">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">Имя</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Фамилия</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="middle_name" type="text" class="validate">
+                  <label for="middle_name">Отчество</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="email_pr" type="email" class="validate">
+                  <label for="email_pr">Email</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="phone_pr" type="text" class="validate">
+                  <label for="phone_pr">Телефон</label>
+                </div>
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Страна</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                  <!-- <label>Страна</label> -->
+                </div>
+                <div class="input-field col s12">
+                  <input id="profession" type="text" class="validate">
+                  <label for="profession">Профессия</label>
+                </div>
+                <div class="input-field col s12">
+                  <h4>Пол</h4>
+                  <p class="row">
+                    <label class="col s6">
+                      <input name="sex" type="radio" />
+                      <span>Мужчина</span>
+                    </label>
+                    <label class="col s6">
+                      <input name="sex" type="radio" />
+                      <span>Женщина</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="input-field col s12">
+                  <h4>Тип профиля</h4>
+                  <p class="row">
+                    <label class="col s6">
+                      <input name="type" type="radio" />
+                      <span>Бизнесмен</span>
+                    </label>
+                    <label class="col s6">
+                      <input name="type" type="radio" />
+                      <span>Индивидуал</span>
+                    </label>
+                  </p>
+                </div>
+
+              </div>
+              <div class="col s6">
+                <div class="right-side">
+                  <div class="avatar-profile">
+                    <div class="avatar-wrapper">
+                      VV
+                      <img src="./styles/main-news/radu-florin-750940-unsplash.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="file-field input-field">
+                    <div class="btn">
+                      <span>Выбрать фото</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+                  </div>
+                  <a href="#">Изменить пароль</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <h3>Ссылки на соцсети</h3>
+          <section class="soc-links">
+            <div class="row">
+              <div class="input-field col s6 facebook">
+                <input id="facebook" type="text" class="validate">
+                <label for="facebook">Facebook</label>
+              </div>
+              <div class="input-field col s6 gplus">
+                <input id="gplus" type="text" class="validate">
+                <label for="facegplusbook">Google +</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6 vk">
+                <input id="vk" type="text" class="validate">
+                <label for="vk">Vkontakte</label>
+              </div>
+              <div class="input-field col s6 ok">
+                <input id="ok" type="text" class="validate">
+                <label for="ok">Odnoklassniki</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6 tw">
+                <input id="tw" type="text" class="validate">
+                <label for="tw">Twitter</label>
+              </div>
+              <div class="input-field col s6 in">
+                <input id="in" type="text" class="validate">
+                <label for="in">Linkedin</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6 instagram">
+                <input id="instagram" type="text" class="validate">
+                <label for="instagram">Instagram</label>
+              </div>
+              <div class="input-field col s6 yb">
+                <input id="yb" type="text" class="validate">
+                <label for="yb">YouTube</label>
+              </div>
+            </div>
+          </section>
+          <h3>Информация о компании</h3>
+          <section class="">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="company_name" type="text" class="validate">
+                <label for="company_name">Название компании</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="company_slogan" type="text" class="validate">
+                <label for="company_slogan">Слоган компании</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="company_phone" type="text" class="validate">
+                <label for="company_phone">Телефон</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="company_fax" type="text" class="validate">
+                <label for="company_fax">Факс</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6 ">
+                <input id="company_address" type="text" class="validate">
+                <label for="company_address">Адрес</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="company_description" type="text" class="validate">
+                <label for="company_description">Описание</label>
+              </div>
+            </div>
+            
+          </section>
+
+          <div class="input-field">
+            <button type="submit">Сохранить</button>
+          </div>
+          <div class="input-field">
+            <a href="#">Выйти</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="scrollToTop">
+      <a href="#">
+        <span>Назад</span>
+        <i class="material-icons">arrow_upward</i>
+      </a>
+
+    </div>
+    <div>
+      <div class="logo-wrapper">
+        <img src="./styles/nav/logo.png" alt="">
+      </div>
+      <ul>
+        <li>
+          <a href="#">Категории</a>
+        </li>
+        <li>
+          <a href="#">О компании</a>
+        </li>
+        <li>
+          <a href="#">Связаться с нами</a>
+        </li>
+        <li>
+          <a href="#">Живой чат</a>
+        </li>
+        <li>
+          <a href="#">Вход/Регистрация</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        ©2018
+        <a href="#">goosefly.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./materialize-src/js/bin/materialize.min.js"></script>
+  <script src="./OwlCarousel2/owl.carousel.min.js"></script>
+  <script src="./js/header.js" defer></script>
+  <script src="./js/profilePage.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+section.profile {
+  &>div {
+    width: 830px;
+  }
+  form {
+    .col {
+      padding: 0;
+    }
+    .profile-settings {
+      .input-field {
+        p,
+        h4 {
+          text-align: left;
+        }
+      }
+    }
+    section {
+      background-color: white;
+      border-radius: $bor-rad;
+      padding: 30px;
+      h4 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+      }
+      p.row {
+        margin: 20px -5px;
+      }
+      .input-field {
+        margin-top: 0;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .row {
+        margin-bottom: 0;
+      }
+      .right-side {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+        .avatar-profile {
+          height: 120px;
+          width: 120px;
+          border-radius: 50%;
+          background-color: $green;
+          color: white;
+          .avatar-wrapper {
+            overflow: hidden;
+            height: 120px;
+            width: 120px;
+            position: relative;
+            border-radius: 50%;
+            background-color: $green;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            img {
+              position: absolute;
+              height: 120px;
+            }
+          }
+        }
+        .file-field {
+          margin: 20px 0;
+          .btn {
+            width: 120px;
+            background-color: transparent;
+            box-shadow: none;
+            border-radius: $bor-rad;
+            border: 1px solid #9e9e9e;
+            box-sizing: border-box;
+            padding: 0;
+          }
+        }
+        .file-path-wrapper {
+          display: none;
+        }
+        .file-field input[type=file] {
+          // position: relative;
+        }
+        .file-field span {
+          font-size: 0.8rem;
+          text-transform: none;
+          color: #9e9e9e;
+        }
+        a {
+          font-size: 0.8rem;
+          color: $green;
+          width: 120px;
+          text-align: center;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        .col {
+          &.s6 {
+            margin-left: 0;
+            width: calc(45% + 25px);
+          }
+        }
+      }
+      &.soc-links {
+        .row {
+          display: flex;
+          justify-content: space-between;
+          margin: 0;
+          .col {
+            &.s6 {
+              margin-left: 0;
+              width: 45%;
+            }
+          }
+          .input-field {
+            input {
+              padding-left: 25px;
+            }
+            &::before {
+              content: '';
+              height: 15px;
+              width: 15px;
+              position: absolute;
+              top: 15px;
+              display: inline-block;
+              left: 0;
+            }
+            &.facebook {
+              &::before {
+                background-image: url('./profile/fb.svg');
+              }
+            }
+            &.vk {
+              &::before {
+                background-image: url('./profile/vk.svg');
+              }
+            }
+            &.ok {
+              &::before {
+                background-image: url('./profile/ok.svg');
+              }
+            }
+            &.gplus {
+              &::before {
+                background-image: url('./profile/gplus.png');
+              }
+            }
+            &.tw {
+              &::before {
+                background-image: url('./profile/tw.svg');
+              }
+            }
+            &.in {
+              &::before {
+                background-image: url('./profile/in.svg');
+              }
+            }
+            &.instagram {
+              &::before {
+                background-image: url('./profile/instagram.png');
+              }
+            }
+            &.yb {
+              &::before {
+                background-image: url('./profile/yb.svg');
+              }
+            }
+          }
+          .input-field.col label {
+            left: 25px;
+          }
+        }
+      }
+    }
+    .input-field {
+      text-align: center;
+      a {
+        margin: 0 auto;
+        color: #db2b2b;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      button {
+        width: 150px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border: 0;
+        background-color: $green;
+        height: 40px;
+        color: white;
+        border-radius: 20px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  input:not([type]):focus:not([readonly]),
+  input[type=text]:not(.browser-default):focus:not([readonly]),
+  input[type=password]:not(.browser-default):focus:not([readonly]),
+  input[type=email]:not(.browser-default):focus:not([readonly]),
+  input[type=url]:not(.browser-default):focus:not([readonly]),
+  input[type=time]:not(.browser-default):focus:not([readonly]),
+  input[type=date]:not(.browser-default):focus:not([readonly]),
+  input[type=datetime]:not(.browser-default):focus:not([readonly]),
+  input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+  input[type=tel]:not(.browser-default):focus:not([readonly]),
+  input[type=number]:not(.browser-default):focus:not([readonly]),
+  input[type=search]:not(.browser-default):focus:not([readonly]),
+  textarea.materialize-textarea:focus:not([readonly]) {
+    border-color: $green;
+    box-shadow: 0 1px 0 0 $green;
+  }
+  input:not([type]):focus:not([readonly])+label,
+  input[type=text]:not(.browser-default):focus:not([readonly])+label,
+  input[type=password]:not(.browser-default):focus:not([readonly])+label,
+  input[type=email]:not(.browser-default):focus:not([readonly])+label,
+  input[type=url]:not(.browser-default):focus:not([readonly])+label,
+  input[type=time]:not(.browser-default):focus:not([readonly])+label,
+  input[type=date]:not(.browser-default):focus:not([readonly])+label,
+  input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+  input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+  input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+  input[type=number]:not(.browser-default):focus:not([readonly])+label,
+  input[type=search]:not(.browser-default):focus:not([readonly])+label,
+  textarea.materialize-textarea:focus:not([readonly])+label {
+    color: $green;
+  }
+  [type="radio"]:not(:checked)+span:before,
+  [type="radio"]:not(:checked)+span:after {
+    border-color: $green;
+  }
+  [type="radio"]:checked+span:after,
+  [type="radio"].with-gap:checked+span:after {
+    background-color: $green;
+  }
+  .input-field.col label {
+    left: 0;
+  }
+  .input-field>label:not(.label-icon).active {
+    transform: translateY(-8px) scale(0.8);
+  }
+  .select-wrapper .caret {
+    fill: #9e9e9e;
+  }
+  .select-wrapper input.select-dropdown {
+    color: #9e9e9e;
+  }
+}
